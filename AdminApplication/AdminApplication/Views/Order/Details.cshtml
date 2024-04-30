@@ -1,0 +1,38 @@
+﻿@model AdminApplication.Models.Order
+
+<div class="container">
+
+    <p>
+        <a class="btn btn-success">@Model.Owner?.UserName</a>
+    </p>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Ticket price
+            </th>
+            <th>
+                Movie
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model?.ProductInOrders)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderedProduct.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderedProduct.MovieId)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+</div>

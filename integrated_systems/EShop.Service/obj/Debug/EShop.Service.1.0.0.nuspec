@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>EShop.Service</id>
+    <version>1.0.0</version>
+    <authors>EShop.Service</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="b42f8f2127e499a07e726df1f232d32195d62538" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="EShop.Domain" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="EShop.Repository" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="MailKit" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="MimeKit" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\kater\Downloads\integrated_systems\integrated_systems\EShop.Service\bin\Debug\net8.0\EShop.Service.dll" target="lib\net8.0\EShop.Service.dll" />
+  </files>
+</package>
